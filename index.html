@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Border Radius Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<h1 class="header">Border Radius Generator</h1>
+
+<p class="text-area">Enter integer of px or % or em values of four corners</p>
+
+<div class="btn-flex-wrapper">
+  <button class="button type round px">px</button>
+  <button class="button type round percent">%</button>
+  <button class="button type round em">em</button>
+</div>
+
+<div class="rest-flex-wrapper">
+  <div class="input-wrapper">
+    <label class="elements label" for="top-left">Top Left:</label>
+    <input class="elements input top-left" type="number" id="top-left" />
+  </div>
+  <div class="input-wrapper">
+    <label class="elements label" for="top-right">Top Right:</label>
+    <input class="elements input top-right" type="number" id="top-right" />
+  </div>
+  <div class="input-wrapper">
+    <label class="elements label" for="bottom-left">Bottom Left:</label>
+    <input class="elements input bottom-left" type="number" id="bottom-left" />
+  </div>
+  <div class="input-wrapper">
+    <label class="elements label" for="bottom-right">Bottom Right:</label>
+    <input class="elements input bottom-right" type="number" id="bottom-right" />
+  </div>
+</div>
+
+<div class="box">
+  <p class="css-syntax">
+    <span class="order">1. Choose a unit</span>
+    <br />
+    <span>2. Enter values</span>
+    <br />
+  </p>
+</div>
+<button class="copy button round">Copy</button>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
